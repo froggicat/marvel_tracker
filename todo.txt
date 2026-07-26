@@ -1,0 +1,3 @@
+add more tables to do with the user and personal ratings / watched or not 
+figure out how to make sure that table is different for individuals (if others were using)
+GITHUB

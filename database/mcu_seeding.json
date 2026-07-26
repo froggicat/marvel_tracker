@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Captain America: The First Avenger",
+      "type": "Movie",
+      "chronological_order": 1,
+      "release_year": 2011
+    },
+    {
+      "title": "Captain Marvel",
+      "type": "Movie",
+      "chronological_order": 2,
+      "release_year": 2019
+    },
+    {
+      "title": "Iron Man",
+      "type": "Movie",
+      "chronological_order": 3,
+      "release_year": 2008
+    },
+    {
+      "title": "Iron Man 2",
+      "type": "Movie",
+      "chronological_order": 4,
+      "release_year": 2010
+    },
+    {
+      "title": "The Incredible Hulk",
+      "type": "Movie",
+      "chronological_order": 5,
+      "release_year": 2008
+    }
+  ]
