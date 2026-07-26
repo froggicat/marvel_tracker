@@ -1,6 +1,12 @@
 from database.database import *
+from database.user_stuff import *
 
 create_tables()
+
+print("Welcome, User!")
+username = input("Enter Username: ")
+id = add_or_get_user(username)
+print(f"Logged in as {username}, ID {id}")
 
 def view_titles():
     print("---")
@@ -29,7 +35,7 @@ def view_by_year():
 
 def main():
     while True:
-        print("Marvel Tracker")
+        print(f"{username}'s Marvel Tracker")
         print("--------------")
         print("1. View all titles")
         print("2. Sort chronologially")
