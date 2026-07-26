@@ -24,11 +24,10 @@ def create_tables():
             )     
     """)       
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS user_progress (
+        CREATE TABLE IF NOT EXISTS watched_movies (
             id INTEGER PRIMARY KEY,
             user_id INTEGER,
             movie_id INTEGER,
-            watched INTEGER DEFAULT 0,
             rating INTEGER CHECK(rating>=1 AND rating<=5),
                    
             FOREIGN KEY(user_id) references users(id),

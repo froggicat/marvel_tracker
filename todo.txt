@@ -1,3 +1,1 @@
-- add users to the user table
-- streamline the view title function
 - add more personalised menu options to track personal progress - progress bar maybe?

@@ -8,13 +8,6 @@ username = input("Enter Username: ")
 id = add_or_get_user(username)
 print(f"Logged in as {username}, ID {id}")
 
-def view_titles():
-    print("---")
-    movies = get_all_movies()
-    for movie in movies:
-        print(movie[1])
-    print("---")
-
 def view_chronologically():
     movies = get_all_movies_chron()
     counter = 1
@@ -38,18 +31,27 @@ def main():
         print(f"{username}'s Marvel Tracker")
         print("--------------")
         print("1. View all titles")
-        print("2. Sort chronologially")
-        print("3. Sort by release year")
-        print("4. Quit")
+        print("2. Mark as watched")
+        print("3. Quit")
         choice = int(input("Enter Choice: "))
 
         if choice == 1:
-            view_titles()
+            order = input("Release or Timeline order? (R/T) : ")
+            if order.upper() == "R":
+                view_by_year()
+            elif order.upper() == "T":
+                view_chronologically()
         elif choice == 2:
-            view_chronologically()
+            # add error handling
+            title = input("Which movie? ")
+            rating = int(input("Rating out of 5? "))
+
+            user_id = get_user_id(username)
+            movie_id = get_movie_id(title)
+
+            mark_watched(movie_id, user_id, rating)
+            print(f"Marked {title} as watched, with a rating of {rating} stars!")
         elif choice == 3:
-            view_by_year()
-        elif choice == 4:
             print("thank you for using my marvel tracker :)")
             break
 
