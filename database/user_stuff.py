@@ -73,6 +73,9 @@ def mark_watched(movie_id, user_id, rating):
     cursor.execute("""
         INSERT INTO watched_movies (user_id, movie_id, rating)
         VALUES(?, ?, ?)
+                   
+        ON CONFLICT(user_id, movie_id)
+        DO UPDATE SET rating = excluded.rating
     """, (user_id, movie_id, rating,))
     connection.commit()
     connection.close()

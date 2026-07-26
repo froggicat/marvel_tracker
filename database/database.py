@@ -30,6 +30,8 @@ def create_tables():
             movie_id INTEGER,
             rating INTEGER CHECK(rating>=1 AND rating<=5),
                    
+            UNIQUE(movie_id, user_id)
+                   
             FOREIGN KEY(user_id) references users(id),
             FOREIGN KEY(movie_id) references movies(id)
             )   
