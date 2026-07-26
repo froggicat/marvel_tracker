@@ -7,15 +7,34 @@ def connect():
 def create_tables():
     connection = connect()
     cursor = connection.cursor()
-    cursor.execute('''
+    cursor.execute("""
         CREATE TABLE IF NOT EXISTS movies (
             id INTEGER PRIMARY KEY,
             title TEXT NOT NULL UNIQUE,
             type TEXT NOT NULL,
             chronological_order INTEGER,
             release_year INTEGER
-            )              
-        ''')
+            )  
+    """)
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY,
+            user TEXT NOT NULL UNIQUE
+            )     
+    """)       
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS user_progress (
+            id INTEGER PRIMARY KEY,
+            user_id INTEGER,
+            movie_id INTEGER,
+            watched INTEGER DEFAULT 0,
+            rating INTEGER CHECK(rating>=1 AND rating<=5),
+                   
+            FOREIGN KEY(user_id) references users(id),
+            FOREIGN KEY(movie_id) references movies(id)
+            )   
+    """)
 
     connection.commit()
     connection.close()
