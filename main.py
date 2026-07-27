@@ -32,7 +32,8 @@ def main():
         print("--------------")
         print("1. View all titles")
         print("2. Mark as watched")
-        print("3. Quit")
+        print("3. View favourite")
+        print("4. Quit")
         choice = int(input("Enter Choice: "))
 
         if choice == 1:
@@ -49,9 +50,16 @@ def main():
             user_id = get_user_id(username)
             movie_id = get_movie_id(title)
 
+            if movie_id is None:
+                print("That movie doesn't exist - please try again.")
+
             mark_watched(movie_id, user_id, rating)
             print(f"Marked {title} as watched, with a rating of {rating} stars!")
         elif choice == 3:
+            movies = get_favourites(id)
+            for movie in movies:
+                print(movie[0])
+        elif choice == 4:
             print("thank you for using my marvel tracker :)")
             break
 

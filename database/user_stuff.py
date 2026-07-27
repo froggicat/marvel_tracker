@@ -53,7 +53,7 @@ def get_movie_id(title):
 
     cursor.execute("""
         SELECT id FROM movies
-        WHERE title = ?
+        WHERE LOWER(title) = LOWER(?)
     """, (title,))
 
     movie = cursor.fetchone()
@@ -79,3 +79,20 @@ def mark_watched(movie_id, user_id, rating):
     """, (user_id, movie_id, rating,))
     connection.commit()
     connection.close()
+
+def get_favourites(user_id):
+    connection = connect()
+    cursor = connection.cursor()
+    cursor.execute("""
+        SELECT title
+        FROM movies
+        JOIN watched_movies
+        ON movies.id = watched_movies.movie_id
+        WHERE watched_movies.user_id = ?
+        AND watched_movies.rating = 5
+    """, (user_id,))
+
+    movies = cursor.fetchall()
+    connection.close()
+
+    return movies
