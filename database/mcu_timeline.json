@@ -1,0 +1,320 @@
+[
+    {
+        "title": "Captain America: The First Avenger",
+        "type": "Movie",
+        "chronological_order": 1,
+        "release_year": 2011
+    },
+    {
+        "title": "Captain Marvel",
+        "type": "Movie",
+        "chronological_order": 2,
+        "release_year": 2019
+    },
+    {
+        "title": "Iron Man",
+        "type": "Movie",
+        "chronological_order": 3,
+        "release_year": 2008
+    },
+    {
+        "title": "Iron Man 2",
+        "type": "Movie",
+        "chronological_order": 4,
+        "release_year": 2010
+    },
+    {
+        "title": "The Incredible Hulk",
+        "type": "Movie",
+        "chronological_order": 5,
+        "release_year": 2008
+    },
+    {
+        "title": "Thor",
+        "type": "Movie",
+        "chronological_order": 6,
+        "release_year": 2011
+    },
+    {
+        "title": "The Avengers",
+        "type": "Movie",
+        "chronological_order": 7,
+        "release_year": 2012
+    },
+    {
+        "title": "Iron Man 3",
+        "type": "Movie",
+        "chronological_order": 8,
+        "release_year": 2013
+    },
+    {
+        "title": "Thor: The Dark World",
+        "type": "Movie",
+        "chronological_order": 9,
+        "release_year": 2013
+    },
+    {
+        "title": "Captain America: The Winter Soldier",
+        "type": "Movie",
+        "chronological_order": 10,
+        "release_year": 2014
+    },
+    {
+        "title": "Guardians of the Galaxy",
+        "type": "Movie",
+        "chronological_order": 11,
+        "release_year": 2014
+    },
+    {
+        "title": "Guardians of the Galaxy Vol. 2",
+        "type": "Movie",
+        "chronological_order": 12,
+        "release_year": 2017
+    },
+    {
+        "title": "Avengers: Age of Ultron",
+        "type": "Movie",
+        "chronological_order": 13,
+        "release_year": 2015
+    },
+    {
+        "title": "Ant-Man",
+        "type": "Movie",
+        "chronological_order": 14,
+        "release_year": 2015
+    },
+    {
+        "title": "Captain America: Civil War",
+        "type": "Movie",
+        "chronological_order": 15,
+        "release_year": 2016
+    },
+    {
+        "title": "Black Widow",
+        "type": "Movie",
+        "chronological_order": 16,
+        "release_year": 2021
+    },
+    {
+        "title": "Black Panther",
+        "type": "Movie",
+        "chronological_order": 17,
+        "release_year": 2018
+    },
+    {
+        "title": "Spider-Man: Homecoming",
+        "type": "Movie",
+        "chronological_order": 18,
+        "release_year": 2017
+    },
+    {
+        "title": "Doctor Strange",
+        "type": "Movie",
+        "chronological_order": 19,
+        "release_year": 2016
+    },
+    {
+        "title": "Thor: Ragnarok",
+        "type": "Movie",
+        "chronological_order": 20,
+        "release_year": 2017
+    },
+    {
+        "title": "Ant-Man and the Wasp",
+        "type": "Movie",
+        "chronological_order": 21,
+        "release_year": 2018
+    },
+    {
+        "title": "Avengers: Infinity War",
+        "type": "Movie",
+        "chronological_order": 22,
+        "release_year": 2018
+    },
+    {
+        "title": "Avengers: Endgame",
+        "type": "Movie",
+        "chronological_order": 23,
+        "release_year": 2019
+    },
+    {
+        "title": "Loki Season 1",
+        "type": "Show",
+        "chronological_order": 24,
+        "release_year": 2021
+    },
+    {
+        "title": "What If...? Season 1",
+        "type": "Show",
+        "chronological_order": 25,
+        "release_year": 2021
+    },
+    {
+        "title": "WandaVision",
+        "type": "Show",
+        "chronological_order": 26,
+        "release_year": 2021
+    },
+    {
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "type": "Movie",
+        "chronological_order": 27,
+        "release_year": 2021
+    },
+    {
+        "title": "The Falcon and the Winter Soldier",
+        "type": "Show",
+        "chronological_order": 28,
+        "release_year": 2021
+    },
+    {
+        "title": "Spider-Man: Far From Home",
+        "type": "Movie",
+        "chronological_order": 29,
+        "release_year": 2019
+    },
+    {
+        "title": "Eternals",
+        "type": "Movie",
+        "chronological_order": 30,
+        "release_year": 2021
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "type": "Movie",
+        "chronological_order": 31,
+        "release_year": 2021
+    },
+    {
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "type": "Movie",
+        "chronological_order": 32,
+        "release_year": 2022
+    },
+    {
+        "title": "Hawkeye",
+        "type": "Show",
+        "chronological_order": 33,
+        "release_year": 2021
+    },
+    {
+        "title": "Moon Knight",
+        "type": "Show",
+        "chronological_order": 34,
+        "release_year": 2022
+    },
+    {
+        "title": "Ms. Marvel",
+        "type": "Show",
+        "chronological_order": 35,
+        "release_year": 2022
+    },
+    {
+        "title": "She-Hulk: Attorney at Law",
+        "type": "Show",
+        "chronological_order": 36,
+        "release_year": 2022
+    },
+    {
+        "title": "Werewolf by Night",
+        "type": "Special",
+        "chronological_order": 37,
+        "release_year": 2022
+    },
+    {
+        "title": "Black Panther: Wakanda Forever",
+        "type": "Movie",
+        "chronological_order": 38,
+        "release_year": 2022
+    },
+    {
+        "title": "The Guardians of the Galaxy Holiday Special",
+        "type": "Special",
+        "chronological_order": 39,
+        "release_year": 2022
+    },
+    {
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "type": "Movie",
+        "chronological_order": 40,
+        "release_year": 2023
+    },
+    {
+        "title": "Guardians of the Galaxy Vol. 3",
+        "type": "Movie",
+        "chronological_order": 41,
+        "release_year": 2023
+    },
+    {
+        "title": "Secret Invasion",
+        "type": "Show",
+        "chronological_order": 42,
+        "release_year": 2023
+    },
+    {
+        "title": "Loki Season 2",
+        "type": "Show",
+        "chronological_order": 43,
+        "release_year": 2023
+    },
+    {
+        "title": "The Marvels",
+        "type": "Movie",
+        "chronological_order": 44,
+        "release_year": 2023
+    },
+    {
+        "title": "Echo",
+        "type": "Show",
+        "chronological_order": 45,
+        "release_year": 2024
+    },
+    {
+        "title": "X-Men '97",
+        "type": "Show",
+        "chronological_order": 46,
+        "release_year": 2024
+    },
+    {
+        "title": "Deadpool & Wolverine",
+        "type": "Movie",
+        "chronological_order": 47,
+        "release_year": 2024
+    },
+    {
+        "title": "Agatha All Along",
+        "type": "Show",
+        "chronological_order": 48,
+        "release_year": 2024
+    },
+    {
+        "title": "Your Friendly Neighborhood Spider-Man",
+        "type": "Show",
+        "chronological_order": 49,
+        "release_year": 2025
+    },
+    {
+        "title": "Daredevil: Born Again",
+        "type": "Show",
+        "chronological_order": 50,
+        "release_year": 2025
+    },
+    {
+        "title": "Ironheart",
+        "type": "Show",
+        "chronological_order": 51,
+        "release_year": 2025
+    },
+    {
+        "title": "Eyes of Wakanda",
+        "type": "Show",
+        "chronological_order": 52,
+        "release_year": 2025
+    },
+    {
+        "title": "The Fantastic Four: First Steps",
+        "type": "Movie",
+        "chronological_order": 53,
+        "release_year": 2025
+    }
+]
