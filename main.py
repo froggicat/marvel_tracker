@@ -1,12 +1,21 @@
 from database.database import *
 from database.user_stuff import *
+import json
+from database.database import add_movie
 
 create_tables()
 
-print("Welcome, User!")
-username = input("Enter Username: ")
-id = add_or_get_user(username)
-print(f"Logged in as {username}, ID {id}")
+def seed_database():
+    with open("database/mcu_timeline.json", "r") as file:
+        movies = json.load(file)
+
+        for movie in movies:
+            add_movie(
+                movie["title"],
+                movie["type"],
+                movie["chronological_order"],
+                movie["release_year"] 
+            )
 
 def view_chronologically():
     movies = get_all_movies_chron()
@@ -26,6 +35,15 @@ def view_by_year():
         counter += 1
     print("---")
 
+if database_empty() == 0:
+    seed_database()
+
+
+print("Welcome, User!")
+username = input("Enter Username: ")
+id = add_or_get_user(username)
+print(f"Logged in as {username}, ID {id}")
+
 def main():
     while True:
         print(f"{username}'s Marvel Tracker")
@@ -39,11 +57,14 @@ def main():
         if choice == 1:
             order = input("Release or Timeline order? (R/T) : ")
             if order.upper() == "R":
+                print("-----------")
                 view_by_year()
+                print("-----------")
             elif order.upper() == "T":
+                print("-----------")
                 view_chronologically()
+                print("-----------")
         elif choice == 2:
-            # add error handling
             title = input("Which movie? ")
             rating = int(input("Rating out of 5? "))
 
@@ -54,11 +75,15 @@ def main():
                 print("That movie doesn't exist - please try again.")
 
             mark_watched(movie_id, user_id, rating)
+            print("-----------")
             print(f"Marked {title} as watched, with a rating of {rating} stars!")
+            print("-----------")
         elif choice == 3:
+            print("-----------")
             movies = get_favourites(id)
             for movie in movies:
                 print(movie[0])
+            print("-----------")
         elif choice == 4:
             print("thank you for using my marvel tracker :)")
             break

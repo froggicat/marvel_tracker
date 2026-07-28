@@ -40,6 +40,17 @@ def create_tables():
     connection.commit()
     connection.close()
 
+def database_empty():
+    connection = connect()
+    cursor = connection.cursor()
+    cursor.execute("""  
+        SELECT COUNT(*) FROM movies
+    """)
+    number = cursor.fetchone()[0]
+    connection.commit()
+    connection.close()
+    return number
+
 def add_movie(title, movie_type, chronological_order, release_year):
     connection = connect()
     cursor = connection.cursor()
