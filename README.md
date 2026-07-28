@@ -4,7 +4,7 @@ A command-line application built with Python and SQLite that helps users track t
 
 This project was built as a way to learn software engineering fundamentals, including databases, SQL, JSON, and building a complete application from scratch.
 
--
+
 
 FEATURES
 
@@ -16,7 +16,7 @@ FEATURES
 - Store user accounts, movies and their info, user ratings and watched movies in a SQLite database
 - Automatically create and seed the database on first launch
 
-- 
+
 
 TECHNOLOGIES USED
 
@@ -24,7 +24,7 @@ TECHNOLOGIES USED
 - JSON
 - SQLite
 
--
+
 
 INSTALLATION
 
@@ -46,7 +46,7 @@ On the first launch, the application will automatically:
  - create all required tables
  - populate the movie database from the JSON file
 
--
+
 
 WHAT I LEARNED
 
@@ -61,7 +61,7 @@ WHAT I LEARNED
  - Writing reusable functions
  - Building a complete command-line application
 
--
+
 
 FUTURE IMPROVEMENTS
 
